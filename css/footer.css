@@ -1,0 +1,69 @@
+@import "constants.css";
+
+footer {
+	width: 100%;
+	background-color: var(--g-900);
+	padding: 2.5rem 0;
+	text-align: left;
+}
+
+footer .main-container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+footer .main-container .footer-top {
+	margin-bottom: 3.5rem;
+}
+
+footer .main-container .footer-top .logo {
+	margin-bottom: 1.5rem;
+}
+
+footer .main-container .footer-top .footer-desc {
+	color: var(--g-100);
+	margin-bottom: 2rem;
+}
+
+footer .main-container .footer-top .footer-icons {
+	display: flex;
+	flex-direction: row;
+}
+
+footer .main-container .footer-top .footer-icons img {
+	width: 40px;
+	margin-right: 1.25rem;
+}
+
+footer .main-container .footer-bottom {
+	color: white;
+	display: flex;
+	flex-direction: row;
+}
+
+footer .main-container .footer-bottom p {
+	font-weight: 500;
+	color: var(--g-300);
+}
+
+footer .main-container .footer-bottom p a {
+	font-weight: 600;
+	color: var(--y-400);
+}
+
+footer .main-container .footer-bottom .footer-links {
+	margin-left: auto;
+	display: flex;
+	flex-direction: row;
+	color: var(--g-300);
+}
+
+footer .main-container .footer-bottom .footer-links a:hover {
+	text-decoration: underline;
+}
+
+footer .main-container .footer-bottom .footer-links a:not(:last-child) {
+	padding-right: 1rem;
+	margin-right: 1rem;
+	border-right: 1px solid grey;
+}

@@ -1,0 +1,70 @@
+.modal-wrap {
+	position: fixed;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	width: 100%;
+	height: 100%;
+	background: rgb(0, 0, 0, 0.75);
+	z-index: 99;
+}
+
+.modal-exit {
+	background: rgb(255, 255, 255, 0.8);
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	margin: auto;
+	margin-top: 1.45rem;
+	text-align: center;
+}
+
+.modal-exit:hover {
+	cursor: pointer;
+}
+
+.modal-exit::before {
+	content: "✕";
+	color: black;
+	font-size: 1.45rem;
+	line-height: 2.45rem;
+	font-weight: 300;
+}
+
+.modal-wrap button {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(255, 255, 255, 0.04);
+	line-height: 4rem;
+	color: white;
+	font-size: 5.75rem;
+	border-radius: 8px;
+	z-index: 999;
+}
+
+.modal-wrap button:first-of-type {
+	left: 50px;
+	padding: 0.5rem 1.35rem 0.9rem 1rem;
+}
+
+.modal-wrap button:nth-of-type(2) {
+	right: 50px;
+	padding: 0.5rem 1rem 0.9rem 1.35rem;
+}
+
+.modal-wrap img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, calc(-50% + 20px));
+	width: auto;
+	max-width: 85%;
+	max-height: 85%;
+	border-radius: 3px;
+}
+
+.modal-wrap img:hover {
+	cursor: pointer;
+}
